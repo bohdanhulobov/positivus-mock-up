@@ -1,0 +1,57 @@
+body {
+  font-family: $font-family;
+  color: $color-font-primary;
+  font-size: $base-font-size;
+  margin: $base-margin;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  font-weight: 500;
+  line-height: $h1-line-height;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  font-weight: 500;
+  line-height: $h2-line-height;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  font-weight: 500;
+  line-height: $h3-line-height;
+}
+
+h4 {
+  font-size: $h4-font-size;
+  font-weight: 400;
+  line-height: $h4-line-height;
+}
+
+p {
+  font-size: $p-font-size;
+  line-height: $p-line-height;
+  font-weight: 400;
+}
+
+a {
+  color: $color-font-primary;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  width: fit-content;
+  padding: 1.25rem 2.1875rem;
+  border-radius: $border-radius-m;
+  color: $color-font-secondary;
+  background-color: $color-secondary;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+hr {
+  border-top: 1px solid $color-font-primary;
+  width: 100%;
+}

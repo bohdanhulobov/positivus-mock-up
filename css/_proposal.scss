@@ -1,0 +1,29 @@
+.proposal {
+  @include flex-space-between;
+  margin: 1.4688rem 0;
+  background-color: $color-tertiary;
+  border-radius: $border-radius-l;
+  overflow: visible;
+  position: relative;
+
+  &__wrapper {
+    @include flex-column;
+    padding: 3.75rem;
+    max-width: 31.25rem;
+    gap: 1.625rem;
+  }
+
+  &__image {
+    margin-right: 8.4375rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      width: 22.4375rem;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

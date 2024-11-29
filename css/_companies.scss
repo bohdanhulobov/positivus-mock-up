@@ -1,0 +1,7 @@
+.companies {
+  @include flex-space-between;
+
+  img {
+    filter: grayscale(100%);
+  }
+}

@@ -1,0 +1,130 @@
+footer {
+  background-color: $color-secondary;
+  color: $color-font-secondary;
+  border-top-left-radius: $border-radius-l;
+  border-top-right-radius: $border-radius-l;
+
+  .wrapper {
+    padding: 3.4375rem 3.75rem;
+  }
+
+  .nav {
+    @include flex-space-between;
+    align-items: center;
+    margin-bottom: 4.125rem;
+
+    &__logo,
+    &__list {
+      @include flex-center;
+      color: inherit;
+    }
+
+    &__logo {
+      font-size: 1.4375rem;
+      font-weight: 500;
+      gap: 0.8rem;
+
+      P {
+        font-size: 1.785rem;
+        font-weight: 500;
+        color: inherit;
+      }
+    }
+
+    &__list {
+      gap: 2.5rem;
+
+      a {
+        color: $color-font-secondary;
+        font-size: $p-font-size;
+        line-height: 1.4356rem;
+        text-decoration: underline;
+      }
+    }
+
+    &__socials {
+      @include flex-center;
+      gap: 1.25rem;
+    }
+  }
+
+  .contact {
+    @include flex-space-between;
+    margin-bottom: 3.125rem;
+
+    &__content {
+      @include flex-column;
+      gap: 1.25rem;
+    }
+
+    h4 {
+      color: $color-font-primary;
+      font-weight: 500;
+      padding: 0 0.4375rem;
+      border-radius: 0.4375rem;
+      background-color: $color-primary;
+      width: fit-content;
+      margin-bottom: 1.6875rem;
+    }
+
+    &__form {
+      display: flex;
+      gap: 1.25rem;
+      background-color: #292a32;
+      padding: 3.6875rem 2.5rem;
+      border-radius: $border-radius-m;
+      width: 100%;
+      max-width: 39.625rem;
+
+      input {
+        background-color: #292a32;
+        border: 1px solid $color-font-secondary;
+        padding: 1.375rem 2.1875rem;
+        border-radius: $border-radius-m;
+        font-family: inherit;
+        width: 100%;
+        max-width: 17.8125rem;
+
+        &::placeholder {
+          color: $color-font-secondary;
+        }
+      }
+
+      button {
+        background-color: $color-primary;
+        color: $color-font-primary;
+        font-size: $h4-font-size;
+        text-wrap: nowrap;
+        line-height: 1.75rem;
+        padding: 1.25rem 2.1875rem;
+        border-radius: $border-radius-m;
+        font-family: inherit;
+        width: 100%;
+        max-width: 15.5625rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid $color-font-secondary;
+  }
+
+  .copyright {
+    @include flex-center;
+    gap: 2.5rem;
+    margin-top: 3.125rem;
+
+    p {
+      font-size: $p-font-size;
+      line-height: 1.75rem;
+    }
+
+    a {
+      color: $color-font-secondary;
+      font-size: $p-font-size;
+      line-height: 1.75rem;
+      text-decoration: underline;
+    }
+  }
+}

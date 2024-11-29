@@ -1,0 +1,75 @@
+.services {
+  margin-bottom: 6.25rem;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    width: 100%;
+  }
+
+  .services_item {
+    @include flex-space-between;
+    width: 100%;
+    max-width: 37.5rem;
+    @include border-shadow;
+
+    &__wrapper {
+      @include flex-column;
+      gap: 5.8125rem;
+      height: 100%;
+      padding: 3.125rem;
+    }
+
+    &__name {
+      width: 13.8125rem;
+
+      h3 {
+        width: fit-content;
+        padding: 0 0.4375rem;
+        border-radius: 0.4375rem;
+      }
+    }
+
+    &__learn-more {
+      @include flex-center;
+      gap: 0.9375rem;
+    }
+
+    &__image {
+      width: 13.125rem;
+      padding-right: 3.125rem;
+    }
+  }
+
+  .services_item:nth-child(1),
+  .services_item:nth-child(4) {
+    background-color: $color-tertiary;
+  }
+
+  .services_item:nth-child(2),
+  .services_item:nth-child(5) {
+    background-color: $color-primary;
+  }
+
+  .services_item:nth-child(3),
+  .services_item:nth-child(6) {
+    background-color: $color-secondary;
+
+    .services_item__learn-more {
+      color: $color-font-secondary;
+    }
+  }
+
+  .services_item:nth-child(1) h3,
+  .services_item:nth-child(4) h3,
+  .services_item:nth-child(6) h3 {
+    background-color: $color-primary;
+  }
+
+  .services_item:nth-child(2) h3,
+  .services_item:nth-child(3) h3,
+  .services_item:nth-child(5) h3 {
+    background-color: $color-font-secondary;
+  }
+}

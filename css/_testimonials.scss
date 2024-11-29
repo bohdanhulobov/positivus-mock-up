@@ -1,0 +1,39 @@
+.testimonials {
+  @include flex-column;
+  background-color: $color-secondary;
+  @include border-shadow;
+
+  .review {
+    @include flex-space-between;
+    margin-top: 5.25rem;
+    margin-bottom: 7.75rem;
+
+    &__author {
+      padding: 1.25rem 5rem;
+      p {
+        color: $color-tertiary;
+      }
+
+      p:first-child {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__slider-navigation {
+    align-self: center;
+    @include flex-space-between;
+    width: 100%;
+    max-width: 35.25rem;
+    margin-bottom: 4.25rem;
+
+    button {
+      background-color: $color-secondary;
+    }
+  }
+
+  &__dots {
+    @include flex-center;
+    gap: 1.1875rem;
+  }
+}

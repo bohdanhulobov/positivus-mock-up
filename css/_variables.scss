@@ -1,0 +1,41 @@
+$color-primary: #b9ff66;
+$color-secondary: #191a23;
+$color-tertiary: #f3f3f3;
+
+$color-font-primary: #000000;
+$color-font-secondary: #ffffff;
+
+$base-font-size: 1.25rem;
+$base-margin: 0 6.25rem;
+$h1-font-size: 3.75rem;
+$h1-line-height: 4.785rem;
+$h2-font-size: 2.5rem;
+$h2-line-height: 3.19rem;
+$h3-font-size: 1.875rem;
+$h3-line-height: 2.3925rem;
+$h4-font-size: 1.25rem;
+$h4-line-height: 1.595rem;
+$p-font-size: 1.125rem;
+$p-line-height: 1.4356rem;
+
+$border-radius-l: 2.8125rem;
+$border-radius-m: 0.875rem;
+
+$font-family: "Space Grotesk", sans-serif;
+
+$font-weights: (
+  "Regular": normal,
+  "Bold": bold,
+  "Light": lighter,
+  "Medium": 500,
+  "SemiBold": 600,
+);
+
+@each $name, $weight in $font-weights {
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("../fonts/SpaceGrotesk-#{$name}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: normal;
+  }
+}

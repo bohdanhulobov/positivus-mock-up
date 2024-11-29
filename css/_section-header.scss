@@ -1,0 +1,13 @@
+.section-header {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 8.75rem;
+  margin-bottom: 5rem;
+
+  &__title {
+    padding: 0 0.4375rem;
+    border-radius: 0.4375rem;
+    background-color: $color-primary;
+    line-height: 3.19rem;
+  }
+}

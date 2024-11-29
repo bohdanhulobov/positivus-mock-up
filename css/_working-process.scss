@@ -1,0 +1,46 @@
+.working-process {
+  @include flex-column;
+  gap: 1.875rem;
+
+  .wp-item {
+    @include flex-column;
+    @include border-shadow;
+    background-color: $color-primary;
+
+    &__wrapper {
+      padding: 2.5625rem 3.75rem;
+    }
+
+    &__header {
+      @include flex-center;
+      gap: 1.25rem;
+
+      &__wrapper {
+        @include flex-space-between;
+
+        img {
+          cursor: pointer;
+        }
+      }
+
+      h2 {
+        font-size: $h1-font-size;
+        font-weight: 500;
+        line-height: $h1-line-height;
+      }
+    }
+
+    &__divider {
+      margin: 1.875rem 0;
+    }
+
+    &--collapsed {
+      @include border-shadow;
+      background-color: $color-tertiary;
+      .wp-item__divider,
+      .wp-item__text {
+        display: none;
+      }
+    }
+  }
+}

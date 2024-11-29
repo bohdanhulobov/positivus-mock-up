@@ -1,0 +1,21 @@
+.case-studies {
+  @include flex-space-between;
+  @include border-shadow;
+  background-color: $color-secondary;
+
+  &__item {
+    padding: 4.375rem 3.75rem;
+  }
+
+  &__text {
+    max-width: 17.875rem;
+    color: $color-font-secondary;
+  }
+
+  &__learn-more {
+    display: flex;
+    gap: 0.9375rem;
+    margin-top: 1.25rem;
+    color: $color-primary;
+  }
+}

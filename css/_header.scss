@@ -1,0 +1,55 @@
+header {
+  .nav {
+    @include flex-space-between;
+    margin-top: 3.75rem;
+    margin-bottom: 4.375rem;
+    align-items: center;
+
+    &__logo,
+    &__list {
+      @include flex-center;
+    }
+
+    &__logo {
+      font-size: 3rem;
+      font-weight: 700;
+      gap: 0.8rem;
+
+      P {
+        font-size: 1.785rem;
+        font-weight: 500;
+      }
+    }
+
+    &__list {
+      gap: 2.5rem;
+    }
+
+    &__item {
+      &--outlined {
+        border: 1px solid $color-secondary;
+        padding: 1.25rem 2.2rem;
+        border-radius: $border-radius-m;
+      }
+    }
+  }
+
+  .description {
+    @include flex-space-between;
+    margin-bottom: 4.375rem;
+
+    &__wrapper {
+      @include flex-column;
+      max-width: 33.1875rem;
+      gap: 2.1875rem;
+    }
+
+    &__text {
+      max-width: 31.25rem;
+    }
+
+    &__speaker img {
+      width: 37.5rem;
+    }
+  }
+}
