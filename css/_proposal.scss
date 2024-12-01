@@ -1,5 +1,4 @@
 .proposal {
-  @include flex-space-between;
   margin: 1.4688rem 0;
   background-color: $color-tertiary;
   border-radius: $border-radius-l;
@@ -9,7 +8,8 @@
   &__wrapper {
     @include flex-column;
     padding: 3.75rem;
-    max-width: 31.25rem;
+    width: 100%;
+    max-width: 37.5rem;
     gap: 1.625rem;
   }
 
@@ -22,8 +22,30 @@
 
     img {
       width: 22.4375rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .proposal {
+    @include flex-column;
+    margin: 1.25rem 0;
+
+    &__wrapper {
+      padding: 3.125rem;
       max-width: 100%;
-      height: auto;
+
+      a {
+        width: 100%;
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    &__image {
+      display: none;
     }
   }
 }

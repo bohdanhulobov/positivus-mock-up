@@ -25,7 +25,7 @@ h3 {
 
 h4 {
   font-size: $h4-font-size;
-  font-weight: 400;
+  font-weight: 500;
   line-height: $h4-line-height;
 }
 
@@ -43,15 +43,51 @@ a {
 
 .button-primary {
   width: fit-content;
-  padding: 1.25rem 2.1875rem;
+  padding: $base-spacing 2.1875rem;
   border-radius: $border-radius-m;
   color: $color-font-secondary;
   background-color: $color-secondary;
   text-align: center;
   line-height: 1.75rem;
+  @include button-hover;
 }
 
 hr {
   border-top: 1px solid $color-font-primary;
   width: 100%;
+}
+
+@media screen and (max-width: 1399px) {
+  body {
+    margin: 0 $base-spacing;
+  }
+
+  h1 {
+    font-size: $h1-font-size-mob;
+    font-weight: 500;
+    line-height: $h1-line-height-mob;
+  }
+
+  h2 {
+    font-size: $h2-font-size-mob;
+    font-weight: 500;
+    line-height: $h2-line-height-mob;
+  }
+
+  h3 {
+    font-size: $h3-font-size-mob;
+    font-weight: 500;
+    line-height: $h3-line-height-mob;
+  }
+
+  h4 {
+    font-size: $h4-font-size-mob;
+    font-weight: 500;
+    line-height: $h4-line-height-mob;
+  }
+
+  p {
+    font-size: $p-font-size-mob;
+    line-height: $p-line-height-mob;
+  }
 }

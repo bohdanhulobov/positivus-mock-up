@@ -15,7 +15,26 @@
   &__learn-more {
     display: flex;
     gap: 0.9375rem;
-    margin-top: 1.25rem;
+    margin-top: $base-spacing;
     color: $color-primary;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .case-studies {
+    @include flex-column;
+
+    & > img {
+      display: none;
+    }
+
+    &__item {
+      padding: 3.125rem;
+    }
+
+    &__item:nth-child(1),
+    &__item:nth-child(3) {
+      display: none;
+    }
   }
 }

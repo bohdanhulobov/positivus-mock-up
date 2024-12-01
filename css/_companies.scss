@@ -5,3 +5,11 @@
     filter: grayscale(100%);
   }
 }
+
+@media screen and (max-width: 1399px) {
+  .companies {
+    gap: $base-spacing;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

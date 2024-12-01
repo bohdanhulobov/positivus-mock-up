@@ -26,6 +26,34 @@
             <a href="#" class="nav__link">Request a quote</a>
           </li>
         </ul>
+        <div class="burger">
+          <input type="checkbox" id="burger-toggle" />
+          <label for="burger-toggle" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <ul class="burger-nav__list">
+            <li class="burger-nav__item">
+              <a href="#" class="burger-nav__link">About us</a>
+            </li>
+            <li class="burger-nav__item">
+              <a href="#" class="burger-nav__link">Services</a>
+            </li>
+            <li class="burger-nav__item">
+              <a href="#" class="burger-nav__link">Use Cases</a>
+            </li>
+            <li class="burger-nav__item">
+              <a href="#" class="burger-nav__link">Pricing</a>
+            </li>
+            <li class="burger-nav__item">
+              <a href="#" class="burger-nav__link">Blog</a>
+            </li>
+            <li class="burger-nav__item">
+              <a href="#" class="burger-nav__link">Request a quote</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div class="description">
@@ -39,9 +67,11 @@
             marketing, and content creation.
           </h4>
           <a class="button-primary">Book a consultation</a>
-        </div>
-        <div class="description__speaker">
-          <img src="img/header/speaker.svg" alt="speaker" />
+          <img
+            class="description__speaker"
+            src="img/header/speaker.svg"
+            alt="speaker"
+          />
         </div>
       </div>
     </header>
@@ -58,8 +88,8 @@
     <section class="section-header">
       <h2 class="section-header__title">Services</h2>
       <p class="section-header__description">
-        At our digital marketing agency, we offer a range of services to
-        <br />help businesses grow and succeed online. These services include:
+        At our digital marketing agency, we offer a range of services to help
+        businesses grow and succeed online. These services include:
       </p>
     </section>
 
@@ -72,17 +102,15 @@
               <h3>optimization</h3>
             </div>
             <a class="services_item__learn-more" href="#">
-              <img
-                src="img/services/arrow-icon-primary.svg"
-                alt="arrow icon"
-              />Learn more</a
+              <img src="img/services/arrow-icon-primary.svg" alt="arrow icon" />
+              <span>Learn more</span></a
             >
+            <img
+              class="services_item__image"
+              src="img/services/seo.svg"
+              alt="seo"
+            />
           </div>
-          <img
-            class="services_item__image"
-            src="img/services/seo.svg"
-            alt="seo"
-          />
         </div>
 
         <div class="services_item">
@@ -95,14 +123,14 @@
               <img
                 src="img/services/arrow-icon-primary.svg"
                 alt="arrow icon"
-              />Learn more</a
+              /><span>Learn more</span></a
             >
+            <img
+              class="services_item__image"
+              src="img/services/pay-per-click.svg"
+              alt="pay-per-click"
+            />
           </div>
-          <img
-            class="services_item__image"
-            src="img/services/pay-per-click.svg"
-            alt="pay-per-click"
-          />
         </div>
 
         <div class="services_item">
@@ -115,14 +143,14 @@
               <img
                 src="img/services/arrow-icon-secondary.svg"
                 alt="arrow icon"
-              />Learn more</a
+              /><span>Learn more</span></a
             >
+            <img
+              class="services_item__image"
+              src="img/services/smm.svg"
+              alt="smm"
+            />
           </div>
-          <img
-            class="services_item__image"
-            src="img/services/smm.svg"
-            alt="smm"
-          />
         </div>
 
         <div class="services_item">
@@ -135,14 +163,14 @@
               <img
                 src="img/services/arrow-icon-primary.svg"
                 alt="arrow icon"
-              />Learn more</a
+              /><span>Learn more</span></a
             >
+            <img
+              class="services_item__image"
+              src="img/services/email-marketing.svg"
+              alt="email-marketing"
+            />
           </div>
-          <img
-            class="services_item__image"
-            src="img/services/email-marketing.svg"
-            alt="email-marketing"
-          />
         </div>
 
         <div class="services_item">
@@ -155,14 +183,14 @@
               <img
                 src="img/services/arrow-icon-primary.svg"
                 alt="arrow icon"
-              />Learn more</a
+              /><span>Learn more</span></a
             >
+            <img
+              class="services_item__image"
+              src="img/services/content-creation.svg"
+              alt="content-creation"
+            />
           </div>
-          <img
-            class="services_item__image"
-            src="img/services/content-creation.svg"
-            alt="content-creation"
-          />
         </div>
 
         <div class="services_item">
@@ -175,14 +203,14 @@
               <img
                 src="img/services/arrow-icon-secondary.svg"
                 alt="arrow icon"
-              />Learn more</a
+              /><span>Learn more</span></a
             >
+            <img
+              class="services_item__image"
+              src="img/services/analytics-and-tracking.svg"
+              alt="analytics-and-tracking"
+            />
           </div>
-          <img
-            class="services_item__image"
-            src="img/services/analytics-and-tracking.svg"
-            alt="analytics-and-tracking"
-          />
         </div>
       </div>
     </section>
@@ -194,18 +222,18 @@
           Contact us today to learn more about how our digital marketing
           services can help your business grow and succeed online.
         </p>
-        <a class="button-primary">Book a consultation</a>
-      </div>
-      <div class="proposal__image">
-        <img src="img/proposal/proposal.svg" alt="proposal" />
+        <a class="button-primary">Get your <span>free</span> proposal</a>
+        <div class="proposal__image">
+          <img src="img/proposal/proposal.svg" alt="proposal" />
+        </div>
       </div>
     </section>
 
     <section class="section-header">
       <h2 class="section-header__title">Case Studies</h2>
       <p class="section-header__description">
-        Explore Real-Life Examples of Our Proven Digital Marketing<br />
-        Success through Our Case Studies
+        Explore Real-Life Examples of Our Proven Digital Marketing Success
+        through Our Case Studies
       </p>
     </section>
 
@@ -595,12 +623,24 @@
       <div class="review">
         <div class="review__card">
           <div class="review__text">
-            <img src="img/testimonials/review-left.svg" alt="review bulb" />
+            <p>
+              "We have been working with Positivus for the past year and have
+              seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive, and
+              truly cares about the success of our business. We highly recommend
+              Positivus to any company looking to grow their online presence."
+            </p>
           </div>
         </div>
         <div class="review__card">
           <div class="review__text">
-            <img src="img/testimonials/review-center.svg" alt="review bulb" />
+            <p>
+              "We have been working with Positivus for the past year and have
+              seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive, and
+              truly cares about the success of our business. We highly recommend
+              Positivus to any company looking to grow their online presence."
+            </p>
           </div>
           <div class="review__author">
             <p>John Smith</p>
@@ -609,7 +649,13 @@
         </div>
         <div class="review__card">
           <div class="review__text">
-            <img src="img/testimonials/review-right.svg" alt="review bulb" />
+            <p>
+              "We have been working with Positivus for the past year and have
+              seen a significant increase in website traffic and leads as a
+              result of their efforts. The team is professional, responsive, and
+              truly cares about the success of our business. We highly recommend
+              Positivus to any company looking to grow their online presence."
+            </p>
           </div>
         </div>
       </div>
@@ -708,16 +754,14 @@
         </nav>
 
         <div class="contact">
-          <div>
+          <div class="contact__content">
             <h4>Contact us:</h4>
-            <div class="contact__content">
-              <p>Email: info@positivus.com</p>
-              <p>Phone: 555-567-8901</p>
-              <p>
-                Address: 1234 Main St <br />
-                Moonstone City, Stardust State 12345
-              </p>
-            </div>
+            <p>Email: info@positivus.com</p>
+            <p>Phone: 555-567-8901</p>
+            <p>
+              Address: 1234 Main St <br />
+              Moonstone City, Stardust State 12345
+            </p>
           </div>
 
           <form class="contact__form">

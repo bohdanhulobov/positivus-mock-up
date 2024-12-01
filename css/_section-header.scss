@@ -9,5 +9,29 @@
     border-radius: 0.4375rem;
     background-color: $color-primary;
     line-height: 3.19rem;
+    width: fit-content;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 36.25rem;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.875rem;
+    margin-top: 3.75rem;
+    margin-bottom: 2.5rem;
+
+    &__title {
+      align-self: center;
+    }
+
+    &__description {
+      align-self: center;
+    }
   }
 }

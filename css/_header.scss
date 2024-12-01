@@ -28,8 +28,9 @@ header {
     &__item {
       &--outlined {
         border: 1px solid $color-secondary;
-        padding: 1.25rem 2.2rem;
+        padding: $base-spacing 2.2rem;
         border-radius: $border-radius-m;
+        @include button-hover;
       }
     }
   }
@@ -40,16 +41,112 @@ header {
 
     &__wrapper {
       @include flex-column;
-      max-width: 33.1875rem;
+      width: 100%;
       gap: 2.1875rem;
+      position: relative;
+    }
+
+    &__title,
+    &__text {
+      max-width: 33.1875rem;
     }
 
     &__text {
-      max-width: 31.25rem;
+      font-weight: 400;
     }
 
-    &__speaker img {
-      width: 37.5rem;
+    &__speaker {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .burger {
+    display: none;
+
+    #burger-toggle {
+      display: none;
+    }
+
+    &-icon {
+      @include flex-column;
+      cursor: pointer;
+
+      span {
+        width: 1.5rem;
+        height: 2px;
+        background-color: $color-font-primary;
+        margin: 0.25rem 0;
+        transition: 0.4s;
+      }
+    }
+
+    &-nav__list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: $base-spacing;
+      right: calc($base-spacing * 4);
+      background-color: $color-tertiary;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      border-radius: $border-radius-m;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    &-nav__item {
+      padding: 1rem 2rem;
+      border: 1px solid $color-primary;
+      @include button-hover;
+    }
+
+    &-nav__link {
+      color: $color-font-primary;
+      text-decoration: none;
+    }
+
+    input[type="checkbox"]:checked ~ .burger-nav__list {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 1399px) {
+    .nav__list {
+      display: none;
+    }
+
+    .burger {
+      display: flex;
+    }
+
+    .description {
+      @include flex-center;
+      flex-direction: column;
+
+      &__wrapper {
+        order: 1;
+        gap: $base-spacing;
+        a {
+          width: 100%;
+        }
+      }
+
+      &__speaker {
+        order: 2;
+        width: 100%;
+        position: static;
+      }
+
+      &__text {
+        order: 3;
+        font-size: $p-font-size-mob;
+        line-height: $p-line-height-mob;
+      }
+
+      .button-primary {
+        order: 4;
+      }
     }
   }
 }

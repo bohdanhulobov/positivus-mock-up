@@ -2,14 +2,37 @@
   @include flex-column;
   background-color: $color-secondary;
   @include border-shadow;
+  overflow: hidden;
 
   .review {
-    @include flex-space-between;
+    display: flex;
+    gap: 3.125rem;
     margin-top: 5.25rem;
-    margin-bottom: 7.75rem;
+    position: relative;
+
+    &__card {
+      flex: 0 0 50%;
+      position: relative;
+      &:first-child {
+        margin-left: -29%;
+      }
+    }
+
+    &__text {
+      background-image: url("../img/testimonials/bubble.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 3rem 3.25rem 5rem;
+
+      p {
+        color: $color-font-secondary;
+        z-index: 1;
+      }
+    }
 
     &__author {
-      padding: 1.25rem 5rem;
+      padding: $base-spacing 5rem 0;
+
       p {
         color: $color-tertiary;
       }
@@ -25,7 +48,7 @@
     @include flex-space-between;
     width: 100%;
     max-width: 35.25rem;
-    margin-bottom: 4.25rem;
+    margin: 7.75rem 0 3.75rem;
 
     button {
       background-color: $color-secondary;
@@ -35,5 +58,55 @@
   &__dots {
     @include flex-center;
     gap: 1.1875rem;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .testimonials {
+    .review {
+      padding: 1.875rem;
+      margin-top: 0;
+      justify-content: center;
+
+      &__card {
+        &:first-child {
+          display: none;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+      &__text {
+        background-image: url("../img/testimonials/bubble-mob.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 20.625rem;
+        padding: 1.875rem 1.875rem 4.8125rem;
+
+        p {
+          color: $color-font-secondary;
+          z-index: 1;
+        }
+      }
+
+      &__author {
+        padding: $base-spacing 5rem 0;
+        p {
+          color: $color-tertiary;
+        }
+
+        p:first-child {
+          color: $color-primary;
+        }
+      }
+    }
+
+    &__slider-navigation {
+      align-self: center;
+      @include flex-space-between;
+      width: 100%;
+      max-width: 20.625rem;
+      margin: 3.75rem 0;
+    }
   }
 }

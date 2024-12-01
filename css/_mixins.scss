@@ -18,3 +18,11 @@
   box-shadow: 0 5px 0 0 $color-secondary;
   border-radius: $border-radius-l;
 }
+
+@mixin button-hover {
+  &:hover {
+    background-color: grayscale($color-primary);
+    color: $color-font-primary;
+    transition: all 0.3s;
+  }
+}

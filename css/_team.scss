@@ -15,16 +15,12 @@
 
     &__header {
       display: flex;
-      gap: 1.25rem;
+      gap: $base-spacing;
       position: relative;
       align-items: flex-end;
 
       img {
         width: 6.1137rem;
-      }
-
-      h4 {
-        font-weight: 500;
       }
 
       .linkedin {
@@ -50,7 +46,21 @@
 
     a {
       margin-top: 2.5rem;
-      padding: 1.25rem 4.75rem;
+      padding: $base-spacing 4.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .team {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .team__button {
+    a {
+      width: 100%;
     }
   }
 }
