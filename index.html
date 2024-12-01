@@ -691,7 +691,7 @@
 
     <section class="contact-us">
       <div class="contact-us__form">
-        <form action="">
+        <form action="/submit-form" method="POST">
           <div class="contact-us__radio">
             <input type="radio" id="sayHi" name="options" value="sayHi" />
             <label for="sayHi">Say Hi</label>
@@ -764,7 +764,7 @@
             </p>
           </div>
 
-          <form class="contact__form">
+          <form class="contact__form" action="/submit-form" method="POST">
             <input type="email" name="email" placeholder="Email" required />
             <button type="submit" class="button-primary">
               Subscribe to news
