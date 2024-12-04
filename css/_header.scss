@@ -127,14 +127,16 @@ header {
       &__wrapper {
         order: 1;
         gap: $base-spacing;
+        align-items: center;
+
         a {
-          width: 100%;
+          width: clamp(20rem, 100%, 30rem);
         }
       }
 
       &__speaker {
         order: 2;
-        width: 100%;
+        width: clamp(20rem, 100%, 30rem);
         position: static;
       }
 

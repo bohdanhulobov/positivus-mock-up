@@ -95,6 +95,8 @@
 @media screen and (max-width: 1399px) {
   .contact-us {
     margin-bottom: 5.625rem;
+    max-width: clamp(30rem, 100%, 50rem);
+    margin: 0 auto;
 
     &__form {
       padding: 2.5rem 1.875rem;

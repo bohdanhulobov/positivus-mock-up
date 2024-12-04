@@ -6,6 +6,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
     width: 100%;
+    justify-items: center;
   }
 
   .services_item {
@@ -82,11 +83,10 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     .services_item {
-      max-width: 100%;
-
       &__learn-more {
         span {
           display: none;

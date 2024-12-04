@@ -263,6 +263,15 @@ hr {
     line-height: 1.5rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  body {
+    max-width: 77.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
 header .nav {
   display: flex;
   justify-content: space-between;
@@ -380,13 +389,14 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
   header .description__wrapper {
     order: 1;
     gap: 1.25rem;
+    align-items: center;
   }
   header .description__wrapper a {
-    width: 100%;
+    width: clamp(20rem, 100%, 30rem);
   }
   header .description__speaker {
     order: 2;
-    width: 100%;
+    width: clamp(20rem, 100%, 30rem);
     position: static;
   }
   header .description__text {
@@ -456,6 +466,7 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
   width: 100%;
+  justify-items: center;
 }
 .services .services_item {
   width: 100%;
@@ -525,9 +536,7 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
   .services__list {
     display: flex;
     flex-wrap: wrap;
-  }
-  .services .services_item {
-    max-width: 100%;
+    justify-content: space-evenly;
   }
   .services .services_item__learn-more span {
     display: none;
@@ -568,11 +577,12 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
   .proposal {
     display: flex;
     flex-direction: column;
-    margin: 1.25rem 0;
+    max-width: clamp(20rem, 100%, 40rem);
+    margin: 0 auto;
   }
   .proposal__wrapper {
     padding: 3.125rem;
-    max-width: 100%;
+    align-self: center;
   }
   .proposal__wrapper a {
     width: 100%;
@@ -610,12 +620,15 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
   .case-studies {
     display: flex;
     flex-direction: column;
+    max-width: clamp(20rem, 100%, 30rem);
+    margin: 0 auto;
   }
   .case-studies > img {
     display: none;
   }
   .case-studies__item {
     padding: 3.125rem;
+    align-self: center;
   }
   .case-studies__item:nth-child(1), .case-studies__item:nth-child(3) {
     display: none;
@@ -668,9 +681,14 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
 }
 
 @media screen and (max-width: 1399px) {
+  .working-process {
+    align-items: center;
+  }
   .working-process .wp-item,
   .working-process .wp-item--collapsed {
     border-radius: 2.8125rem;
+    max-width: clamp(20rem, 100%, 40rem);
+    width: 100%;
   }
   .working-process .wp-item__wrapper,
   .working-process .wp-item--collapsed__wrapper {
@@ -731,21 +749,35 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
 .team .team-member__text {
   line-height: 1.4356rem;
 }
-.team .team__button {
+.team__button {
   display: flex;
   justify-content: flex-end;
 }
-.team .team__button a {
+.team__button a {
   margin-top: 2.5rem;
   padding: 1.25rem 4.75rem;
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1279px) {
   .team__list {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .team__button {
+    display: flex;
+    justify-content: center;
   }
   .team__button a {
-    width: 100%;
+    width: clamp(20rem, 100%, 30rem);
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .team__list .team-member {
+    max-width: 100%;
   }
 }
 .testimonials {
@@ -807,6 +839,10 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
 }
 
 @media screen and (max-width: 1399px) {
+  .testimonials {
+    max-width: clamp(20rem, 100%, 30rem);
+    margin: 0 auto;
+  }
   .testimonials .review {
     padding: 1.875rem;
     margin-top: 0;
@@ -937,6 +973,8 @@ header .burger input[type=checkbox]:checked ~ .burger-nav__list {
 @media screen and (max-width: 1399px) {
   .contact-us {
     margin-bottom: 5.625rem;
+    max-width: clamp(30rem, 100%, 50rem);
+    margin: 0 auto;
   }
   .contact-us__form {
     padding: 2.5rem 1.875rem;
@@ -1104,6 +1142,8 @@ footer .copyright a {
   footer .contact {
     display: flex;
     flex-direction: column;
+    max-width: clamp(30rem, 100%, 40rem);
+    margin: 0 auto;
     align-items: center;
   }
   footer .contact h4 {
